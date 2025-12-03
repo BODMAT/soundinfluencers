@@ -28,6 +28,7 @@ export function App() {
 
           <Route index element={<Loader />} />
           <Route path="glass" element={<TestGlass />} />
+          <Route path="*" element={<div className={styles.notFound}>404 - not found</div>} />
         </Route>
       </Routes>
     </Router>
