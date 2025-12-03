@@ -1,0 +1,23 @@
+.loader {
+    height: 100%;
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+    &__bar {
+        background: linear-gradient(108deg, #BCE8FF 3.56%, rgba(218, 244, 255, 0.94) 50.39%, rgba(191, 216, 255, 0.89) 79.14%, rgba(164, 188, 255, 0.85) 100%);
+        border-radius: 10px;
+
+        width: 12px;
+        height: 0;
+        opacity: 0;
+        animation: pulse 1s infinite alternate ease-in-out;
+    }
+}
+
+:global {
+    @keyframes pulse {
+        0% { transform: scaleY(0); opacity: 1; }
+        100% { transform: scaleY(1.0); opacity: 1; }
+    }
+}
